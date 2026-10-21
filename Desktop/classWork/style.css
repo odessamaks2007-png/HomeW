@@ -1,0 +1,65 @@
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 30px;
+    color: #333;
+}
+h1 
+{
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+.seasons-list, .months-list 
+{
+    list-style: none;
+    padding-left: 0;
+}
+.season 
+{
+    margin-bottom: 20px;
+}
+.season-title 
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+.months-list 
+{
+    padding-left: 10px;
+}
+.months-list li 
+{
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 6px;
+}
+.months-list li::before 
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.winter .months-list li::before 
+{
+    background-image: url('winter_16.png');
+}
+.spring .months-list li::before 
+{
+    background-image: url('spring_16.png');
+}
+.summer .months-list li::before 
+{
+    background-image: url('summer_16.png');
+}
+.autumn .months-list li::before 
+{
+    background-image: url('autumn_16.png');
+}
